@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fauna One', serif;
+}
+
+/* navigation bar  */
+nav{
+    display: flex;
+    background-color: black;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+nav div{
+    display: flex;
+    margin-left: auto;
+}
+nav a{
+align-self: center;
+padding: 15px;
+text-decoration: none;
+padding-right: 10px;
+font-family: 'Playfair Display', serif;
+}
+#brandName{
+    padding: 15px;
+}
+
+/* baground image with photo and information  */
+
+.bg::before{
+    background: url('https://source.unsplash.com/1600x900/?programming,laptop') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.bg-profile img{
+display: block;
+width: 5em;
+height: 5em;
+margin: auto;
+padding: 30px;
+border-radius: 100%;
+}
+.bg-info{
+    text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 30vh;
+}
+.btn button{
+    cursor: pointer;
+    padding:10px;
+    border-radius: 23px;
+    background-color:#ADEFD1FF;
+    color: #00203FFF;
+    margin-right: 55px;
+}
+
+.container{
+    position: absolute;
+    top: 100vh;
+}
+/* common classes */
+.white{
+    color: white;
+}
