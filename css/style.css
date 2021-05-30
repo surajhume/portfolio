@@ -3,11 +3,14 @@
     padding: 0px;
     font-family: 'Fauna One', serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* navigation bar  */
 nav{
     display: flex;
-    background-color: black;
+    background-color: #000000ad;
 }
 h1{
     font-family: 'Playfair Display', serif;
@@ -49,9 +52,6 @@ margin: auto;
 padding: 30px;
 border-radius: 100%;
 }
-.bg-info{
-    text-align: center;
-}
 .btn{
     display: flex;
     justify-content: center;
@@ -70,7 +70,69 @@ border-radius: 100%;
     position: absolute;
     top: 100vh;
 }
+
+/* projects section  */
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #00203FFF;
+}
+.container h1{
+    padding-top: 5vh;
+}
+
+.projects-list{
+display: flex;
+justify-content: space-around;
+padding-top: 25vh;
+}
+.project-1:hover,
+.project-2:hover,
+.project-3:hover{
+    
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+      
+}
+
+@media only screen and (max-width: 1100px) {
+    .projects-list{
+        flex-direction: column;
+        padding-top: 10vh;
+    }
+    .project-1{
+        margin: 20px 0px;
+    }
+    .project-2{
+        margin: 20px 0px;
+    }
+    .project-3{
+        margin: 20px 0px;
+    }
+    .container{
+        height: max-content;
+    }
+}
+
+/* Image size reference  */
+/* .projects-list img{
+    width: 320px;
+    height: 210px;
+} */
+
+
 /* common classes */
 .white{
     color: white;
+}
+.center{
+    text-align: center;
+}
+.card{
+    border: 2px solid black;
+    background-color: #ADEFD1FF;
+    padding: 10px;
+    border-radius: 13px;
+    color: #00203FFF;
 }
