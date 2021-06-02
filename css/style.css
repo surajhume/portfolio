@@ -6,6 +6,9 @@
 html{
     scroll-behavior: smooth;
 }
+.landingPage{
+    height: 100vh;
+}
 
 /* navigation bar  */
 nav{
